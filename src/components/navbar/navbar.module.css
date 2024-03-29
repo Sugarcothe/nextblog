@@ -1,0 +1,36 @@
+.container {
+  background: rgba(8, 38, 51, 0.52);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw;
+  align-items: center;
+  height: 15vh;
+}
+
+.logo {
+  font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+  .container {
+    background: rgba(8, 38, 51, 0.52);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw;
+    align-items: center;
+    height: 13vh;
+  }
+
+  .logo {
+    font-size: 6vw;
+    font-weight: 600;
+  }
+}

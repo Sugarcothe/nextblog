@@ -1,0 +1,11 @@
+.container {
+  /* width: 7vw; */
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.active {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+}

@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #50978f;
+  --secondary-color: #0b3547;
+  --white-color: #e6f7fa;
+  --dark-color: #333;
+  --success-color: #28a745;
+  --danger-color: #c03a47; /* Red */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.childContainer {
+  width: 80vw;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .childContainer {
+    width: 95vw;
+    margin: auto;
+  }
+}

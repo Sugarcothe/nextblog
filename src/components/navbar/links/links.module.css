@@ -1,0 +1,56 @@
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1vw;
+  font-size: 1.2vw;
+}
+
+.logout {
+  font-size: 1.2vw;
+  font-weight: 500;
+  padding: 1vh 1vw;
+  background-color: var(--danger-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .linkContainer {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobileLinks {
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    width: 40%;
+    height: calc(100vh - 100px);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(8, 38, 51, 0.52);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+  }
+}
